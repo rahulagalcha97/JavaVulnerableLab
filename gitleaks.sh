@@ -4,8 +4,7 @@
 if which gitleaks >/dev/null; then
     echo exists
 else
-    export VER="1.24.0"
-    wget https://github.com/zricethezav/gitleaks/releases/download/v$VER/gitleaks-linux-amd64
+    wget https://github.com/zricethezav/gitleaks/releases/download/v6.2.0/gitleaks-linux-amd64
     mv gitleaks-linux-amd64 gitleaks
     chmod +x gitleaks
     sudo mv gitleaks /usr/local/bin/
