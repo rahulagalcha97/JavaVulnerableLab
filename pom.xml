@@ -41,15 +41,20 @@
     <scope>provided</scope>
 </dependency>	 	
   </dependencies>
-<reporting>
+  <reporting>
     <plugins>
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
         <version>4.1.5-SNAPSHOT</version>
+        <configuration>
+          <xmlOutput>true</xmlOutput>
+          <!-- Optional directory to put spotbugs xdoc xml report -->
+          <xmlOutputDirectory>target/site</xmlOutputDirectory>
+        </configuration>
       </plugin>
     </plugins>
-  </reporting>	
+  </reporting>
  <build>
     <finalName>JavaVulnerableLab</finalName>
   </build>
